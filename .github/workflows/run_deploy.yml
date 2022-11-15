@@ -23,4 +23,4 @@ jobs:
           host: ${{ secrets.SERVER }}
           username: ${{ secrets.USERNAME }}
           password: ${{ secrets.PASSWORD }}
-          script: cd ${{ PATH }} && git pull
+          script: cd ${{ secrets.PATH }} && git pull
