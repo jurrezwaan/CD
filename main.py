@@ -9,7 +9,7 @@ def index():
 
 
 @app.route('/cat')
-def cow():
+def cat():
     return 'Miauw!'
 
 
