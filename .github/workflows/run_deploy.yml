@@ -23,5 +23,4 @@ jobs:
           host: ${{ secrets.SERVER }}
           username: ${{ secrets.USERNAME }}
           password: ${{ secrets.PASSWORD }}
-      - name: Run script
-        run: sh ./github_action_script.sh
+          script: sh ./github_action_script.sh
