@@ -27,4 +27,4 @@ def test_succes(client):
     response = client.get("/succes")
 
     assert response.status_code == 200
-    assert response.data == b"Succes"
+    assert response.data == b"Succes!"
