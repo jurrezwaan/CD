@@ -11,3 +11,8 @@ def index():
 @app.route('/cat')
 def cow():
     return 'Miauw!'
+
+
+@app.route('/succes')
+def succes():
+    return 'Succes!'

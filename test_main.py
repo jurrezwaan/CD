@@ -13,7 +13,7 @@ def test_index(client):
     response = client.get("/")
 
     assert response.status_code == 200
-    assert response.data == b"Hello, World!"
+    assert response.data == b"Hello, world!"
 
 
 def test_cat(client):
@@ -21,3 +21,10 @@ def test_cat(client):
 
     assert response.status_code == 200
     assert response.data == b"Miauw!"
+
+
+def test_succes(client):
+    response = client.get("/succes")
+
+    assert response.status_code == 200
+    assert response.data == b"Succes"
