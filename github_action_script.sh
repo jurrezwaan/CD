@@ -1,4 +1,5 @@
 echo "Run script file"
-cd ~/CD
+sudo apt update
+cd CD
 git pull
-systemctl restart CD
+sudo systemctl restart CD
