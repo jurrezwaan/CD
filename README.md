@@ -4,23 +4,26 @@
 
 ## ***Drie elementen van mijn oplossing***
 ---
-### **Github Actions** is een manier om processen te automatiseren. In dit geval om automatisch de applicatie te testen en daarna in te loggen op de vps en daar een `git pull` uit te voeren door middel van iets wat lijkt op een java script.
+### **Github Actions** 
+is een manier om processen te automatiseren. In dit geval om automatisch de applicatie te testen en daarna in te loggen op de vps en daar een `git pull` uit te voeren door middel van iets wat lijkt op een java script.
 
 ---
 
-### **SSH** staat voor `Secure Socket Shell` of `Secure Shell`. Dit is een netwerk protocol dat het mogelijk maakt om een veilige verbinding met een andere computer te maken. Dit gaat dan via een `Terminal` zoals bijvoorbeeld `Git Bash`. Het verbinding maken gaat via zogenaamde `SSH Key Pairs` waarvan het ene deel altijd bij jezelf blijft en het andere deel gedeeld kan worden. Zodat bij inloggen wordt gekeken of de keys bij elkaar horen
+### **SSH** 
+staat voor `Secure Socket Shell` of `Secure Shell`. Dit is een netwerk protocol dat het mogelijk maakt om een veilige verbinding met een andere computer te maken. Dit gaat dan via een `Terminal` zoals bijvoorbeeld `Git Bash`. Het verbinding maken gaat via zogenaamde `SSH Key Pairs` waarvan het ene deel altijd bij jezelf blijft en het andere deel gedeeld kan worden. Zodat bij inloggen wordt gekeken of de keys bij elkaar horen
 
 ---
 
-### **Digital Ocean** is een leveraar van cloudinfrastructuur. Je huurt daar een `droplet`. Dat is een stukje schijf ruimte op een server met een `vm` die op `Ubuntu` draait. Vanuit daar wordt je applicatie gehost naar een ip adres wat overal te bereiken is.
+### **Digital Ocean** 
+is een leveraar van cloudinfrastructuur. Je huurt daar een `droplet`. Dat is een stukje schijf ruimte op een server met een `vm` die op `Ubuntu` draait. Vanuit daar wordt je applicatie gehost naar een ip adres wat overal te bereiken is.
 
 ---
 
-## ***Drie problemen***
+## ***Drie problemen*
 
 ---
 
-### ***Inloggen via SSH op de droplet***
+### ***Inloggen via SSH op de droplet
 Voordat alles via `Github Actions` zou gaan wilde ik eerst zelf proberen of ik een 'git clone' en 'git pull' kon uitvoeren op de droplet. Dit lukte eerst niet omdat de tutorial die ik volgde de `config file` als volgt aanmaakte: 
 ``` 
 sudo cat >~/.ssh/config <<EOL
@@ -61,4 +64,4 @@ Dit is niet echt een oplossing maar eerder een omweg. Ik kreeg het niet voor elk
 Het voelde erg Matrix om in te loggen op een server ergens in Frankfurt dat vond ik erg gaaf. Verder is het bestandssysteem van Linux erg raar na 25+ jaar windows. 'Waar is mijn c schijf gebleven' is een van de quotes die ik gebezigd heb. Ik had eerst nog een stomme fout gemaakt door mijn project folder in de root te zetten. Blijkbaar heeft Gunicorn daar geen toegang toe dus lukte het verbinding maken niet. Na de hele handel naar /home/ te hebben gezet werkte alles perfect. 
 
 ps
-De Flask site is lachwekkend simpel maar daar ging het ook niet echt om
+De Flask site is lachwekkend simpel maar daar ging het ook niet echt om.
