@@ -60,7 +60,7 @@ Dit is niet echt een oplossing maar eerder een omweg. Ik kreeg het niet voor elk
 
 ---
 
-## ***Final Thoughts
+### ***Final Thoughts***
 Het voelde erg Matrix om in te loggen op een server ergens in Frankfurt dat vond ik erg gaaf. Verder is het bestandssysteem van Linux erg raar na 25+ jaar windows. 'Waar is mijn c schijf gebleven' is een van de quotes die ik gebezigd heb. Ik had eerst nog een stomme fout gemaakt door mijn project folder in de root te zetten. Blijkbaar heeft Gunicorn daar geen toegang toe dus lukte het verbinding maken niet. Na de hele handel naar /home/ te hebben gezet werkte alles perfect. 
 
 ps
