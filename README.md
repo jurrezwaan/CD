@@ -19,11 +19,11 @@ is een leveraar van cloudinfrastructuur. Je huurt daar een `droplet`. Dat is een
 
 ---
 
-## ***Drie problemen*
+## ***Drie problemen***
 
 ---
 
-### ***Inloggen via SSH op de droplet
+### ***Inloggen via SSH op de droplet***
 Voordat alles via `Github Actions` zou gaan wilde ik eerst zelf proberen of ik een 'git clone' en 'git pull' kon uitvoeren op de droplet. Dit lukte eerst niet omdat de tutorial die ik volgde de `config file` als volgt aanmaakte: 
 ``` 
 sudo cat >~/.ssh/config <<EOL
